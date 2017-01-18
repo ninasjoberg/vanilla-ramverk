@@ -22,9 +22,41 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
 
+
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0.2rem;
+}
+
+// Meny CT
+.top-bar-title {
+	font-family: $header-font-family;
+	font-size: 1.5rem; 
+	cursor: pointer;
+	letter-spacing: 0.05rem;
+	.arrow {
+		padding-left: 0.5rem;
+	}
+
+	@media screen and (max-width: $medium)  {
+		width: 100%;
+	}  
+}
+
+.top-bar ul {
+	font-family: $header-font-family;
+	font-size: 1.5rem; 
+	cursor: pointer;
+	letter-spacing: 0.05rem;
+	a {
+		color: $black;
+	}
+}
+
+
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+//@include foundation-grid;  /* Ändrar, CT */
+@include foundation-flex-grid; /* Ändrar, CT*/ 
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -63,7 +95,7 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes; /*Ändrar, CT */
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
