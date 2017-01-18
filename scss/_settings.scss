@@ -71,7 +71,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-$global-flexbox: false;
+$global-flexbox: true;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
@@ -103,6 +103,7 @@ $block-grid-max: 8;
 
 // 4. Base Typography
 // ------------------
+
 $header-font-family: 'Bebas Neue', Georgia; /* Ändrar, CT */
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;

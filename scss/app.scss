@@ -8,6 +8,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
 
+$primary-color: #827191;
+$secondary-color: #BEE3DB;
 
 h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0.2rem;
@@ -123,24 +125,31 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+.background-green{
+	background-color: $secondary-color;
+}
 
+.background-border{
+	border: 1px solid black;
+}
 
+.projekt{
+	padding: 2rem 0; 
+}
 
+.projekt-text{
+	margin: 1rem 0; 
+}
 
-
-
-
-
-
-
-
-
+.icon{
+	padding: 1.5rem 0.5rem;
+}
 
 
 
 @include foundation-global-styles;
-//@include foundation-grid;  /* Ändrar, CT */
-@include foundation-flex-grid; /* Ändrar, CT*/ 
+//@include foundation-grid;  
+@include foundation-flex-grid;  
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -178,8 +187,9 @@ h1, h2, h3, h4, h5, h6 {
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
-@include foundation-flex-classes; /*Ändrar, CT */
+@include foundation-float-classes; /* denna ska utkomenteras om flex-classes används /Nina*/
+@include foundation-flex-classes; 
+
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
