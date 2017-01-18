@@ -19,6 +19,7 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
   font-style: normal;
 }
 
+
 // Lägger till, funkar ej? 
 @font-face {
 font-family: "FontAwesome";
@@ -35,30 +36,69 @@ font-style: normal;
 
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
 
+
 $primary-color: #827191;
 $secondary-color: #BEE3DB;
 
-.backgound-green{
+.background-green{
 	background-color: $secondary-color;
+}
+
+.background-border{
+	border: 1px solid black;
 }
 
 .projekt{
 	padding: 2rem 0; 
 }
 
-.backgound-border{
-	border: 1px solid black;
-}
-
 .projekt-text{
-	margin: 1rem 0; /* måste vi ange fontsize npgon stans? */
+	margin: 1rem 0; 
 }
 
+/*****************************************/
+
+.icon{
+	padding: 1.5rem 0.5rem;
+}
+
+/*****************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0.2rem;
+}
+
+// Meny CT
+.top-bar-title {
+	font-family: $header-font-family;
+	font-size: 1.5rem; 
+	cursor: pointer;
+	letter-spacing: 0.05rem;
+	.arrow {
+		padding-left: 0.5rem;
+	}
+
+/*
+	@media screen and (max-width: $medium)  { //vart är $medium definierad? får fel på denna.. 
+		width: 100%;
+	}  
+*/
+}
+
+.top-bar ul {
+	font-family: $header-font-family;
+	font-size: 1.5rem; 
+	cursor: pointer;
+	letter-spacing: 0.05rem;
+	a {
+		color: $black;
+	}
+}
 
 
 @include foundation-global-styles;
-//@include foundation-grid;
-@include foundation-flex-grid;
+//@include foundation-grid;  /* Ändrar, CT */
+@include foundation-flex-grid; /* Ändrar, CT*/ 
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -96,8 +136,9 @@ $secondary-color: #BEE3DB;
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-//@include foundation-float-classes;
-@include foundation-flex-classes;
+@include foundation-float-classes; /* denna ska utkomenteras om flex-classes används /Nina*/
+@include foundation-flex-classes; /*Ändrar, CT */
+
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
