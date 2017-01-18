@@ -6,22 +6,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-$font-path: "../fonts/foundation-icons/foundation-icons";
-@font-face {
-  font-family: "foundation-icons";
-  src: url("#{$font-path}.eot");
-  src: url("#{$font-path}.eot?#iefix") format("embedded-opentype"),
-       url("#{$font-path}.woff") format("woff"),
-       url("#{$font-path}.ttf") format("truetype"),
-       url("#{$font-path}.svg#fontcustom") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@import "../fonts/foundation-icons/foundation-icons.css";
-
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
-
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,21 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Meny CT
-.top-bar-title {
-	font-family: $header-font-family;
-	font-size: 1.5rem; 
-	cursor: pointer;
-	letter-spacing: 0.05rem;
-	.arrow {
-		padding-left: 0.5rem;
-	}
-
-	@media screen and (max-width: $medium)  {
-		width: 100%;
-	}  
-}
-
-.top-bar ul {
+.menu, .hamburger {
 	font-family: $header-font-family;
 	font-size: 1.5rem; 
 	cursor: pointer;
@@ -51,7 +22,40 @@ h1, h2, h3, h4, h5, h6 {
 	a {
 		color: $black;
 	}
+
 }
+
+.ham-meny {
+	position: absolute; 
+	top: 1rem; 
+	right: 1rem;
+
+	.arrow {
+		padding-left: 0.5rem;
+	}
+}
+
+.logo {
+	width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	.toggle-style {
+		background-color: $primary-color !important;
+		text-align: center;
+		transition: opacity 1s ease, height 1s ease;
+
+		li {
+		    border-bottom: 1px solid #FFF;
+		    display: block;
+		    padding: 0.5em 0;
+	   	}
+	}
+}
+
+
+
+
 
 
 @include foundation-global-styles;
