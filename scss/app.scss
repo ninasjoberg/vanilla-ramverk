@@ -7,31 +7,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-$font-path: "../fonts/foundation-icons/foundation-icons";
-@font-face {
-  font-family: "foundation-icons";
-  src: url("#{$font-path}.eot");
-  src: url("#{$font-path}.eot?#iefix") format("embedded-opentype"),
-       url("#{$font-path}.woff") format("woff"),
-       url("#{$font-path}.ttf") format("truetype"),
-       url("#{$font-path}.svg#fontcustom") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-// Lägger till, funkar ej? 
-@font-face {
-font-family: "FontAwesome";
-src: url("fonts/fontawesome-webfont.eot");
-src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"),
-url("fonts/fontawesome-webfont.woff") format("woff"),
-url("fonts/fontawesome-webfont.ttf") format("truetype"),
-url("fonts/fontawesome-webfont.svg") format("svg");
-font-weight: normal;
-font-style: normal;
-}
-
 @import "../fonts/foundation-icons/foundation-icons.css";
 
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
@@ -39,6 +14,52 @@ font-style: normal;
 
 $primary-color: #827191;
 $secondary-color: #BEE3DB;
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0.2rem;
+}
+
+// Meny CT
+.menu, .hamburger {
+	font-family: $header-font-family;
+	font-size: 1.5rem; 
+	cursor: pointer;
+	letter-spacing: 0.05rem;
+	a {
+		color: $black;
+	}
+
+}
+
+.ham-meny {
+	position: absolute; 
+	top: 1rem; 
+	right: 1rem;
+
+	.arrow {
+		padding-left: 0.5rem;
+	}
+}
+
+
+.logo {
+	width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	.toggle-style {
+		background-color: $primary-color !important;
+		text-align: center;
+		transition: opacity 1s ease, height 1s ease;
+
+		li {
+		    border-bottom: 1px solid #FFF;
+		    display: block;
+		    padding: 0.5em 0;
+	   	}
+	}
+}
+
 
 .background-green{
 	background-color: $secondary-color;
@@ -56,44 +77,13 @@ $secondary-color: #BEE3DB;
 	margin: 1rem 0; 
 }
 
-/*****************************************/
-
 .icon{
 	padding: 1.5rem 0.5rem;
 }
 
-/*****************************************/
 
-h1, h2, h3, h4, h5, h6 {
-	letter-spacing: 0.2rem;
-}
 
-// Meny CT
-.top-bar-title {
-	font-family: $header-font-family;
-	font-size: 1.5rem; 
-	cursor: pointer;
-	letter-spacing: 0.05rem;
-	.arrow {
-		padding-left: 0.5rem;
-	}
 
-/*
-	@media screen and (max-width: $medium)  { //vart är $medium definierad? får fel på denna.. 
-		width: 100%;
-	}  
-*/
-}
-
-.top-bar ul {
-	font-family: $header-font-family;
-	font-size: 1.5rem; 
-	cursor: pointer;
-	letter-spacing: 0.05rem;
-	a {
-		color: $black;
-	}
-}
 
 
 @include foundation-global-styles;
