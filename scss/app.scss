@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 	a {
 		color: $black;
 	}
-
 }
 
 .ham-meny {
@@ -59,11 +58,30 @@ h1, h2, h3, h4, h5, h6 {
 	   	}
 	}
 }
+/*****************************/
+/*Erbjuder*/
+.erbjuder{
+	padding: 1rem;
+}
+
+.icon-hover{
+	transition: all .2s ease-in;
+	transform: scale(1);
+}
+	
+.hover:hover .icon-hover{
+	transition: all .1s ease-out;
+	transform: scale(1.3);
+}
 
 
+
+/*****************************/
+/*Projekt:*/
 .background-green{
 	background-color: $secondary-color;
 }
+
 
 .background-border{
 	border: 1px solid black;
@@ -76,14 +94,11 @@ h1, h2, h3, h4, h5, h6 {
 .projekt-text{
 	margin: 1rem 0; 
 }
+/**************************/
 
-.icon{
+.fa{
 	padding: 1.5rem 0.5rem;
 }
-
-
-
-
 
 
 @include foundation-global-styles;
