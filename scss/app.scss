@@ -6,11 +6,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-@import "../fonts/foundation-icons/foundation-icons.css";
-
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
-
 
 $primary-color: #827191;
 $secondary-color: #BEE3DB;
@@ -41,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-
 .logo {
 	width: 100%;
 }
@@ -50,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 	.toggle-style {
 		background-color: $primary-color !important;
 		text-align: center;
-		transition: opacity 1s ease, height 1s ease;
 
 		li {
 		    border-bottom: 1px solid #FFF;
@@ -59,6 +53,76 @@ h1, h2, h3, h4, h5, h6 {
 	   	}
 	}
 }
+
+
+/******************************************************************/
+/* OM OSS */
+
+.about-us > div {
+	position: relative;
+}
+
+.about-us {
+	.column, .columns {
+		padding:0;
+	}
+
+
+}
+
+
+.about-us img {
+	width: 100%;
+}
+
+.tag {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	h3 {
+		font-size: 1.5rem;
+		color: #000;
+		margin: 0;
+		padding: 0;
+		text-shadow: 0 0 5px #555;
+	}
+}
+
+.arrow {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	opacity: 1;
+}	
+
+.hover-box {
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	background: #FFF;
+	opacity: 0;
+	transition: all 1s ease-in;
+	padding: 1.5rem;
+	
+	&:hover {
+		transition: all 1s ease-out;
+		opacity: 0.8;
+	}
+
+	p {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+}
+
+.name {
+	color: $secondary-color;
+	font-size: 1.3rem;
+}
+
 
 
 .background-green{
@@ -83,12 +147,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-
 @include foundation-global-styles;
-//@include foundation-grid;  /* Ändrar, CT */
-@include foundation-flex-grid; /* Ändrar, CT*/ 
+//@include foundation-grid;  
+@include foundation-flex-grid;  
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -127,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes; /* denna ska utkomenteras om flex-classes används /Nina*/
-@include foundation-flex-classes; /*Ändrar, CT */
+@include foundation-flex-classes; 
 
 
 @include motion-ui-transitions;
