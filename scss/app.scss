@@ -19,12 +19,47 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
   font-style: normal;
 }
 @import "../fonts/foundation-icons/foundation-icons.css";
-
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
 
+
+
+.head-wrapper{
+	height:600px;
+}
+
+ .header {
+  text-align: left;
+  background: url("../images/hem/phoneman_500px_sm.jpg") no-repeat;
+  background-size:100%;
+  padding: 3rem 0 0 3rem;
+  height:300px;
+
+
+	@media screen and (min-width: 543px) {
+  		background: url("../images/hem/phoneman_1200px.jpg") no-repeat;
+  		background-size: 100%;
+  		padding: 3rem 0 0 3rem;
+  		height:600px;
+  		}
+  
+  .main-header {
+    color: #ffffff;
+  }
+  	.anim{
+		width:40%;
+		padding-left: 0;
+	}
+}
+
+
+
+.row-margin{
+	margin-top: 4rem;
+}
+
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+// @include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -63,7 +98,7 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
