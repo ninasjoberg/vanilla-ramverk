@@ -60,6 +60,15 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
     margin-top: 3rem;
     }
 }
+.background-skew{
+    background-color: #827191;
+    transform: skewY(15deg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    z-index: -2000;
+  }
 
 
 @include foundation-global-styles;
