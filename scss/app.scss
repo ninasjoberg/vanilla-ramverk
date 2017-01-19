@@ -23,12 +23,9 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 
 
 
-
-
-.header {
+.background {
   position: relative;
   text-align: left;
-
 
 .anim{
   position: absolute;
@@ -42,6 +39,7 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 .background-img-sm{
   display:block;
   width: 100%;
+  height:100%;
     @media screen and (min-width: 543px) {
       display:none;
     }
@@ -51,15 +49,18 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
     @media screen and (min-width: 543px) {
       display:block;
       width: 100%;
+      height: 100%;
     }
   }
 }
+
 .row-margin{
   margin-top: 0.2rem;
     @media screen and (min-width: 543px) {
     margin-top: 3rem;
     }
 }
+
 
 @include foundation-global-styles;
 // @include foundation-grid;
