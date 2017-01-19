@@ -4,38 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanilla - Tidigare Projekt</title>
+    <title>Vanilla - Hem</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
   </head>
   <body>
 
-    <!-- Header -->
-    <div class="row">
-      <div class="large-3 medium-4 small-6 columns">
-        <img src="images/logo/vanilla-logo.svg" alt="Logga">
-      </div>
-      <div class="large-9 medium-8 small-6 columns">
-        
-        <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle></button>
-          <div class="title-bar-title">Meny<i class="step fi-arrow-down size-12"></i> <!-- Foundation ikon --></div>
-        </div>
+  <!-- Header -->
+  <div class="ham-meny"><span class="hamburger" data-responsive-toggle="meny"><span data-toggle>Meny</span><i class="fa fa-caret-down fa-1x arrow" data-toggle></i></span> </div>
 
-        <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
-          <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li><a href="index.html">Hem</a></li>
-              <li><a href="views/erbjuder.html">Vi erbjuder</a></li>
-              <li><a href="views/projekt.html">Projekt</a></li>
-              <li><a href="views/om-oss.html">Om oss</a></li>
-              <li><a href="views/kontakt.html">Kontakt</a></li>
-            </ul>
-          </div>
-        </div>
+  <div class="top-bar flex-container row">
+    <div class="top-bar-title column small-4 medium-2">
+      <img src="images/logo/vanilla-logo.svg" alt="Logga" class="logo">
+    </div>
+    <div class="column small-12 medium-10">
+      <div id="meny" class="top-bar-right">
+        <ul class="menu vertical medium-horizontal toggle-style" data-responsive-menu="drilldown medium-dropdown">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="views/erbjuder.html">Vi erbjuder</a></li>
+          <li><a href="views/projekt.html">Projekt</a></li>
+          <li><a href="views/om-oss.html">Om oss</a></li>
+          <li><a href="views/kontakt.html">Kontakt</a></li>
+        </ul>
       </div>
     </div>
+  </div>
     <!-- Slut på Header -->
    
     <!-- Innehåll --> 
@@ -81,16 +75,16 @@
 
     <!-- Slut på Innehåll -->
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer>
       <div class="row">
         <div class="large-6 columns">
           <ul class="vertical medium-horizontal menu">
-            <li><a href="#">Hem</a></li>
-            <li><a href="#">Vi erbjuder</a></li>
-            <li><a href="#">Projekt</a></li>
-            <li><a href="#">Om oss</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="views/erbjuder.html">Vi erbjuder</a></li>
+            <li><a href="views/projekt.html">Projekt</a></li>
+            <li><a href="views/om-oss.html">Om oss</a></li>
+            <li><a href="views/kontakt.html">Kontakt</a></li>
           </ul>
         </div>
       </div>
