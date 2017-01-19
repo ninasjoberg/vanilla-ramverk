@@ -62,11 +62,11 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 }
 .background-skew{
     background-color: #827191;
-    transform: skewY(15deg);
+    transform: skewY(35deg);
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     z-index: -2000;
   }
 
