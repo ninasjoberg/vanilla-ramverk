@@ -83,7 +83,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
 .about-us img {
 	width: 100%;
 }
@@ -161,6 +160,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+.background {
+  position: relative;
+  text-align: left;
+  max-width:100% !important;
+}
+.anim{
+  position: absolute;
+	width:40%;
+  margin: 2rem 0 0 1rem;
+    @media screen and (min-width: 543px) {
+      margin: 3rem 0 0 3rem;
+    }
+}
+
+.background-img-sm{
+  display:block;
+  width: 100%;
+  height:100%;
+    @media screen and (min-width: 543px) {
+      display:none;
+    }
+}
+.background-img{
+  display:none;
+    @media screen and (min-width: 543px) {
+      display:block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+.row-margin{
+  margin-top: 0.2rem;
+    @media screen and (min-width: 543px) {
+    margin-top: 3rem;
+    }
+}
+.background-skew{
+    background-color: #827191;
+    transform: skewY(35deg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    z-index: -2000;
+  }
+
+
 @include foundation-global-styles;
 //@include foundation-grid;  
 @include foundation-flex-grid;  
@@ -203,7 +253,5 @@ h1, h2, h3, h4, h5, h6 {
 @include foundation-visibility-classes;
 @include foundation-float-classes; /* denna ska utkomenteras om flex-classes används /Nina*/
 @include foundation-flex-classes; 
-
-
 @include motion-ui-transitions;
 @include motion-ui-animations;
