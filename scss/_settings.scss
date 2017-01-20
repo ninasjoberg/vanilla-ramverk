@@ -50,7 +50,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #BEE3DB,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -63,7 +63,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;  /* Ändrar, CT */
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -104,20 +104,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-// Lägger till, funkar ej? 
-@font-face {
-font-family: "FontAwesome";
-src: url("fonts/fontawesome-webfont.eot");
-src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"),
-url("fonts/fontawesome-webfont.woff") format("woff"),
-url("fonts/fontawesome-webfont.ttf") format("truetype"),
-url("fonts/fontawesome-webfont.svg") format("svg");
-font-weight: normal;
-font-style: normal;
-}
-
-
-$header-font-family: 'Bebas Neue', Georgia;
+$header-font-family: 'Bebas Neue', Georgia; /* Ändrar, CT */
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -601,8 +588,8 @@ $thumbnail-radius: $global-radius;
 // 35. Title Bar
 // -------------
 
-$titlebar-background: $black;
-$titlebar-color: $white;
+$titlebar-background: $white;   /* Ändrar från black, C */
+$titlebar-color: $black; /* Ändrar från white, C */
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
@@ -626,9 +613,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $white; /* Ändrar, CT */ 
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
-

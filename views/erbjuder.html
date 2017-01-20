@@ -11,72 +11,102 @@
   </head>
   <body>
 
-    <!-- Header -->
-    <div class="row">
-      <div class="large-3 medium-4 small-6 columns">
-        <img src="../images/logo/vanilla-logo.svg" alt="Logga">
-      </div>
-      <div class="large-9 medium-8 small-6 columns">
-        
-        <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle></button>
-          <div class="title-bar-title">Meny<i class="step fi-arrow-down size-12"></i> <!-- Foundation ikon --></div>
-        </div>
+  <!-- Header -->
+  <div class="ham-meny"><span class="hamburger" data-responsive-toggle="meny"><span data-toggle>Meny</span><i class="fa fa-caret-down fa-1x arrow" data-toggle></i></span> </div>
 
-        <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
-          <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li><a href="#">Hem</a></li>
-              <li><a href="#">Vi erbjuder</a></li>
-              <li><a href="#">Projekt</a></li>
-              <li><a href="#">Om oss</a></li>
-              <li><a href="#">Kontakt</a></li>
-            </ul>
-          </div>
-        </div>
+  <div class="top-bar flex-container row">
+    <div class="top-bar-title column small-4 medium-2">
+      <img src="../images/logo/vanilla-logo.svg" alt="Logga" class="logo">
+    </div>
+    <div class="column small-12 medium-10">
+      <div id="meny" class="top-bar-right">
+        <ul class="menu vertical medium-horizontal toggle-style" data-responsive-menu="drilldown medium-dropdown">
+          <li><a href="../index.html">Hem</a></li>
+          <li><a href="erbjuder.html">Vi erbjuder</a></li>
+          <li><a href="projekt.html">Projekt</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
       </div>
     </div>
+  </div>
     <!-- Slut på Header -->
-   
+
     <!-- Innehåll --> 
     <div class="row">
-      <div class="medium-6 small-12 columns text-center"> 
-        <i class="fa fa-heart-o fa-4x"></i> 
-        <h3>Tillgänglighet</h3>
-        <p>Vi lyfter fram ert innehåll och gör det tillgängligt för alla målgrupper. Vi följer WCAG 2.0 standard för att försäkra oss om att såväl bilder, texter som annat innehåll kan ses och användas av så många användare som möjligt.</p>
+      <div class="medium-6 small-12 columns text-center background-green erbjuder">
+        <div class="row align-middle">
+          <span class="fa fa-heart-o fa-4x small-4 columns medium-12 columns icon-hover" aria-hidden="true"></span> 
+          <div class="small-8 columns medium-12 columns text-left medium-text-center">
+            <h3>Tillgänglighet</h3>
+            <p>Vi lyfter fram ert innehåll och gör det tillgängligt för alla målgrupper. Vi följer WCAG 2.0 standard för att försäkra oss om att såväl bilder, texter som annat innehåll kan ses och användas av så många användare som möjligt.</p>
+          </div>  
+        </div> 
       </div>
-      <div class="medium-6 columns text-center">
-        <i class="fa fa-laptop fa-4x"></i> 
-        <h3>Responsiv design</h3>
-        <p>Vi bygger responsiva webbplatser som anpassar sig för den typ av enhet som besökaren använder. Webbplatsen anpassas både mobiler, surfplattor och datorer samt maximerar upplevelsen oavsett skärmteknik. </p>
+      <div class="medium-6 columns text-center background-border erbjuder">
+        <div class="row align-middle">
+          <div class="small-4 columns medium-12 columns icon-hover icon-resp">
+            <span class="fa fa-laptop fa-4x" aria-hidden="true"></span> 
+            <span class="fa fa-mobile fa-4x" aria-hidden="true"></span>
+          </div>
+          <div class="small-8 columns medium-12 columns text-left medium-text-center">
+            <h3>Responsiv design</h3>
+            <p>Vi bygger responsiva webbplatser som anpassar sig för den typ av enhet som besökaren använder. Webbplatsen anpassas både mobiler, surfplattor och datorer samt maximerar upplevelsen oavsett skärmteknik. </p>
+          </div>  
+        </div>  
       </div>
     </div>
     <div class="row">
-      <div class="medium-6 small-12 columns text-center">
-        <i class="fa fa-mobile fa-5x"></i>
-        <h3>Mobile first</h3>
-        <p>Vi jobbar efter mobile first för att användaren ska få en så bra upplevelse som möjligt även på små skärmar. Då många i dag gör sina ärenden på internet under just på sin mobil. </p>
+      <div class="medium-6 small-12 columns text-center small-order-4 medium-order-3 background-border erbjuder">
+        <div class="row align-middle">
+          <span class="fa fa-mobile fa-5x columns small-4 columns medium-12 columns icon-hover" aria-hidden="true"></span>
+          <div class="small-8 columns medium-12 columns text-left medium-text-center">
+            <h3>Mobile first</h3>
+            <p>Vi jobbar efter mobile first för att användaren ska få en så bra upplevelse som möjligt även på små skärmar. Då många i dag gör sina ärenden på internet under just på sin mobil. </p>
+          </div>
+        </div>    
       </div>
-      <div class="medium-6 small-12 columns text-center">
-        <i class="fa fa-cogs fa-4x"></i>
-        <h3>Experter på UX</h3>
-        <p>Vi sätter besökarens upplevelse i fokus. Genom användartester och undersökningar vet vi besökaren behov och önskemål. Vi designar användarvänliga och ändamålsenliga webbplatser!</p>
+      <div class="medium-6 small-12 columns text-center small-order-3 medium-order-4 background-green erbjuder">
+        <div class="row align-middle">
+          <span class="fa fa-cogs fa-4x small-4 columns medium-12 icon-hover"></span>
+          <div class="small-8 columns medium-12 columns text-left medium-text-center">
+            <h3>Experter på UX</h3>
+            <p>Vi sätter besökarens upplevelse i fokus. Genom a4nvändartester och undersökningar vet vi besökaren behov och önskemål. Vi designar användarvänliga och ändamålsenliga webbplatser!</p>
+          </div>
+        </div>    
       </div>
     </div>
     <!-- Slut på Innehåll -->
 
     <!-- Footer -->
+    <footer>
     <div class="row">
-      <div class="large-6 columns">
-        <ul class="vertical medium-horizontal menu">
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Vi erbjuder</a></li>
-          <li><a href="#">Projekt</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Kontakt</a></li>
+      <div class="large-12 columns">
+        <ul class="vertical medium-horizontal menu flex-container align-justify">
+          <li><a href="../index.html">Hem</a></li>
+          <li><a href="erbjuder.html">Vi erbjuder</a></li>
+          <li><a href="projekt.html">Projekt</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </div>
     </div>
+    <div class="row align-center">
+        <div class="column align-middle text-center">
+          <div>Vanilla Webdesign</div>
+          <div>Skånegatan, Stockholm</div>
+          <div>tel: 070 000 000</div>
+          <div>info@vanillaweb.se</div>
+         </div> 
+      </div>
+      <div class="row align-center">
+        <div class="small-4 columns text-center">
+          <span class="fa fa-facebook-official fa-2x icon" aria-hidden="true"></span>
+          <span class="fa fa-instagram fa-2x icon" aria-hidden="true"></span>
+          <span class="fa fa-twitter-square fa-2x icon" aria-hidden="true"></span>
+        </div>
+      </div>
+    </footer>  
     <!-- Slut på Footer -->
 
     <script src="../bower_components/jquery/dist/jquery.js"></script>

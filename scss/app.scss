@@ -6,20 +6,159 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-$font-path: "../fonts/foundation-icons/foundation-icons";
-@font-face {
-  font-family: "foundation-icons";
-  src: url("#{$font-path}.eot");
-  src: url("#{$font-path}.eot?#iefix") format("embedded-opentype"),
-       url("#{$font-path}.woff") format("woff"),
-       url("#{$font-path}.ttf") format("truetype"),
-       url("#{$font-path}.svg#fontcustom") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@import "../fonts/foundation-icons/foundation-icons.css";
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
+
+$primary-color: #827191;
+$secondary-color: #BEE3DB;
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0.2rem;
+}
+
+// Meny CT
+.menu, .hamburger {
+	font-family: $header-font-family;
+	font-size: 1.5rem; 
+	cursor: pointer;
+	letter-spacing: 0.05rem;
+	a {
+		color: $black;
+	}
+}
+
+.ham-meny {
+	position: absolute; 
+	top: 1rem; 
+	right: 1rem;
+
+	.arrow {
+		padding-left: 0.5rem;
+	}
+}
+
+.logo {
+	width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	.toggle-style {
+		background-color: $primary-color !important;
+		text-align: center;
+
+		li {
+		    border-bottom: 1px solid #FFF;
+		    display: block;
+		    padding: 0.5em 0;
+	   	}
+	}
+}
+/*****************************/
+/*Erbjuder*/
+.erbjuder{
+	padding: 2rem;
+}
+
+
+.icon-hover{
+	transition: all .2s ease-in;
+	transform: scale(1);
+}
+	
+.erbjuder:hover .icon-hover{
+	transition: all .1s ease-out;
+	transform: scale(1.5);
+}
+
+/* OM OSS */
+
+.about-us > div {
+	position: relative;
+}
+
+.about-us {
+	.column, .columns {
+		padding:0;
+	}
+
+
+}
+
+.about-us img {
+	width: 100%;
+}
+
+.tag {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	h3 {
+		font-size: 1.5rem;
+		color: #000;
+		margin: 0;
+		padding: 0;
+		text-shadow: 0 0 5px #555;
+	}
+}
+
+.arrow {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	opacity: 1;
+}	
+
+.hover-box {
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	background: #FFF;
+	opacity: 0;
+	transition: all 1s ease-in;
+	padding: 1.5rem;
+	
+	&:hover {
+		transition: all 1s ease-out;
+		opacity: 0.8;
+	}
+
+	p {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+}
+
+.name {
+	color: $secondary-color;
+	font-size: 1.3rem;
+}
+
+
+
+.background-green{
+	background-color: $secondary-color;
+}
+
+
+.background-border{
+	border: 1px solid black;
+}
+
+.projekt{
+	padding: 2rem 0; 
+}
+
+.projekt-text{
+	margin: 1rem 0; 
+}
+/**************************/
+
+.fa{
+	padding: 1.5rem 0.5rem;
+}
+
 
 
 
@@ -73,8 +212,8 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 
 
 @include foundation-global-styles;
-// @include foundation-grid;
-@include foundation-flex-grid;
+//@include foundation-grid;  
+@include foundation-flex-grid;  
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -112,8 +251,7 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
-@include foundation-flex-classes;
-
+@include foundation-float-classes; /* denna ska utkomenteras om flex-classes används /Nina*/
+@include foundation-flex-classes; 
 @include motion-ui-transitions;
 @include motion-ui-animations;
