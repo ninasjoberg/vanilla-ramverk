@@ -26,7 +26,8 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
 .background {
   position: relative;
   text-align: left;
-
+  max-width:100% !important;
+}
 .anim{
   position: absolute;
 	width:40%;
@@ -52,7 +53,7 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
       height: 100%;
     }
   }
-}
+
 
 .row-margin{
   margin-top: 0.2rem;
