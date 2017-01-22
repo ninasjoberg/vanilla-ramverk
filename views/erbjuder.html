@@ -16,13 +16,13 @@
 
   <div class="top-bar flex-container row">
     <div class="top-bar-title column small-4 medium-2">
-      <img src="../images/logo/vanilla-logo.svg" alt="Logga" class="logo">
+      <a href="../index.html"><img src="../images/logo/vanilla-logo.svg" alt="Logga" class="logo"></a>
     </div>
     <div class="column small-12 medium-10">
       <div id="meny" class="top-bar-right">
-        <ul class="menu vertical medium-horizontal toggle-style" data-responsive-menu="drilldown medium-dropdown">
+        <ul class="menu vertical medium-horizontal toggle-style flex-container align-justify" data-responsive-menu="drilldown medium-dropdown">
           <li><a href="../index.html">Hem</a></li>
-          <li><a href="erbjuder.html">Vi erbjuder</a></li>
+          <li><a href="erbjuder.html" class="active">Vi erbjuder</a></li>
           <li><a href="projekt.html">Projekt</a></li>
           <li><a href="om-oss.html">Om oss</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
@@ -80,18 +80,18 @@
 
     <!-- Footer -->
     <footer>
-    <div class="row">
-      <div class="large-12 columns">
-        <ul class="vertical medium-horizontal menu flex-container align-justify">
-          <li><a href="../index.html">Hem</a></li>
-          <li><a href="erbjuder.html">Vi erbjuder</a></li>
-          <li><a href="projekt.html">Projekt</a></li>
-          <li><a href="om-oss.html">Om oss</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+      <div class="row bottom-nav hide-for-small-only">
+        <div class="small-12 columns text-center">
+          <ul class="vertical medium-horizontal menu flex-container align-justify">
+            <li><a href="../index.html">Hem</a></li>
+            <li><a href="erbjuder.html" class="active">Vi erbjuder</a></li>
+            <li><a href="projekt.html">Projekt</a></li>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="row align-center">
+      <div class="row align-center contact-info">
         <div class="column align-middle text-center">
           <div>Vanilla Webdesign</div>
           <div>Skånegatan, Stockholm</div>
@@ -100,14 +100,20 @@
          </div> 
       </div>
       <div class="row align-center">
-        <div class="small-4 columns text-center">
+        <div class="small-12 columns text-center">
           <span class="fa fa-facebook-official fa-2x icon" aria-hidden="true"></span>
           <span class="fa fa-instagram fa-2x icon" aria-hidden="true"></span>
           <span class="fa fa-twitter-square fa-2x icon" aria-hidden="true"></span>
         </div>
       </div>
+      <div class="row align-center contact-info">
+        <div class="column align-middle text-center">
+          <div>Följ oss på sociala medier!</div>
+         </div> 
+      </div>
     </footer>  
     <!-- Slut på Footer -->
+
 
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/what-input/dist/what-input.js"></script>

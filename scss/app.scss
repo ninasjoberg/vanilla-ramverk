@@ -10,15 +10,17 @@
 
 $primary-color: #827191;
 $secondary-color: #BEE3DB;
+$tertiary-color: #e3bec6; 
 
 h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0.2rem;
 }
 
-// Meny CT
+/*****************************************/
+/* MENY */
 .menu, .hamburger {
 	font-family: $header-font-family;
-	font-size: 1.5rem; 
+	font-size: 24px; 
 	cursor: pointer;
 	letter-spacing: 0.05rem;
 	a {
@@ -42,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 640px) {
 	.toggle-style {
-		background-color: $primary-color !important;
+		background-color: $secondary-color !important;
 		text-align: center;
 
 		li {
@@ -52,7 +54,24 @@ h1, h2, h3, h4, h5, h6 {
 	   	}
 	}
 }
-/*****************************/
+
+
+// Media query för active i menyn
+.active{ 
+	 	text-decoration: underline !important; 
+}
+@media screen and (min-width: 640px) {
+	.active { 
+ 		color: white !important;
+ 		text-decoration: none !important;
+ 		background-color: $secondary-color;
+ 		background-color: black;
+ 		padding:0.2rem 0.3rem 0.2rem 0.3rem;
+	}
+}
+
+
+/*****************************************/
 /*Erbjuder*/
 .erbjuder{
 	padding: 2rem;
@@ -69,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 	transform: scale(1.5);
 }
 
+/*****************************************/
 /* OM OSS */
 
 .about-us > div {
@@ -89,24 +109,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .tag {
 	position: absolute;
-	top: 2rem;
-	right: 2rem;
+	top: 1rem;
+	right: 1rem;
 	h3 {
-		font-size: 1.5rem;
-		color: #000;
+		background-color: $tertiary-color;
+		color: black;
 		margin: 0;
 		padding: 0;
-		text-shadow: 0 0 5px #555;
+		padding: 8px 5px 5px 8px;
 	}
 }
-
-.arrow {
-	position: absolute;
-	bottom: 2rem;
-	right: 2rem;
-	opacity: 1;
-}	
-
 .hover-box {
 	position: absolute;
 	top: 0rem;
@@ -120,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 	
 	&:hover {
 		transition: all 1s ease-out;
-		opacity: 0.8;
+		opacity: 0.9;
 	}
 
 	p {
@@ -128,15 +140,21 @@ h1, h2, h3, h4, h5, h6 {
 		padding-top: 0;
 	}
 	
+	@media screen and (min-width: 600px) {
+	    top: 3rem;
+		left: 0rem;
+		right: 0rem;
+		bottom: 0rem;
+    }
 }
 
 .name {
-	color: $secondary-color;
 	font-size: 1.3rem;
 }
 
 
-
+/*****************************************/
+/* Erbjuder */ 
 .background-green{
 	background-color: $secondary-color;
 }
@@ -153,14 +171,13 @@ h1, h2, h3, h4, h5, h6 {
 .projekt-text{
 	margin: 1rem 0; 
 }
-/**************************/
 
+
+/*****************************************/
+/* Kontakt */ 
 .fa{
-	padding: 1.5rem 0.5rem;
+	/* padding: 1.5rem 0.5rem; Denna förstör för menyn?*/ 
 }
-
-
-
 
 .background {
   position: relative;
@@ -210,6 +227,24 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -2000;
   }
 
+/*****************************************/
+/*Footer*/ 
+
+.bottom-nav {
+	background: $secondary-color;
+	padding: 2rem 2rem;
+	margin: 2rem 0;
+	max-width: 1500px !important;
+}
+
+.contact-info{
+	font-family: $header-font-family;
+	font-size: 1.2rem;
+	padding: 1rem 0;
+}
+
+
+/*****************************************/
 
 @include foundation-global-styles;
 //@include foundation-grid;  
