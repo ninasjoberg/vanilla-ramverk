@@ -81,10 +81,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .anim{
   	position: absolute;
-	width:40%;
- 	margin: 2rem 0 0 1rem;
+	width:50%;
+ 	margin: 3.5rem 0 0 0.6rem;
     	@media screen and (min-width: 543px) {
-      		margin: 3rem 0 0 3rem;
+      		margin: 3rem 0 0 1.8rem;
+      		width: 40%;
     	}
 }
 
@@ -115,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
   		@media screen and (min-width: 543px) {
 			font-size: 2rem;
     }
+}
+.card-margin{
+	padding-top: 0.2rem !important;
 }
 
 /*****************************************/
