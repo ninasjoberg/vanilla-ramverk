@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 /* MENY */
 .menu, .hamburger {
 	font-family: $header-font-family;
-	font-size: 24px; 
+	font-size: 2.3rem; 
 	cursor: pointer;
 	letter-spacing: 0.05rem;
 	a {
@@ -67,9 +67,55 @@ h1, h2, h3, h4, h5, h6 {
  		background-color: $secondary-color;
  		background-color: black;
  		padding:0.2rem 0.3rem 0.2rem 0.3rem;
+ 		font-size: 2.3rem;
 	}
 }
 
+/*****************************************/
+/* Index */ 
+
+.background {
+  position: relative;
+  text-align: left;
+  max-width:100% !important;
+}
+.anim{
+  	position: absolute;
+	width:40%;
+ 	margin: 2rem 0 0 1rem;
+    	@media screen and (min-width: 543px) {
+      		margin: 3rem 0 0 3rem;
+    	}
+}
+
+.background-img-sm{
+  	display:block;
+  	width: 100%;
+  	height:100%;
+    	@media screen and (min-width: 543px) {
+      		display:none;
+    	}
+}
+.background-img{
+  	display:none;
+    	@media screen and (min-width: 543px) {
+      		display:block;
+      		width: 100%;
+      		height: 100%;
+    	}
+  }
+
+.slogan p{
+	font-family: $body-font-family;
+	font-size: 1.5rem;
+	height: 250px;
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+  		@media screen and (min-width: 543px) {
+			font-size: 2rem;
+    }
+}
 
 /*****************************************/
 /*Erbjuder*/
@@ -172,59 +218,17 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 1rem 0; 
 }
 
-
 /*****************************************/
 /* Kontakt */ 
-.fa{
-	/* padding: 1.5rem 0.5rem; Denna förstör för menyn?*/ 
-}
 
-.background {
-  position: relative;
-  text-align: left;
-  max-width:100% !important;
-}
-.anim{
-  position: absolute;
-	width:40%;
-  margin: 2rem 0 0 1rem;
-    @media screen and (min-width: 543px) {
-      margin: 3rem 0 0 3rem;
-    }
-}
-
-.background-img-sm{
-  display:block;
-  width: 100%;
-  height:100%;
-    @media screen and (min-width: 543px) {
-      display:none;
-    }
-}
-.background-img{
-  display:none;
-    @media screen and (min-width: 543px) {
-      display:block;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-
-.row-margin{
-  margin-top: 0.2rem;
-    @media screen and (min-width: 543px) {
-    margin-top: 3rem;
-    }
-}
 .background-skew{
-    background-color: #827191;
-    transform: skewY(35deg);
+    background-color: $tertiary-color;
+    transform: skewY(155deg);
     position: absolute;
     height: 100%;
     width: 100%;
     padding: 1rem;
-    z-index: -2000;
+    z-index: -1;
   }
 
 /*****************************************/
@@ -243,6 +247,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 1rem 0;
 }
 
+footer .fa{
+	padding: 1.5rem 0.5rem; 
+}
 
 /*****************************************/
 
