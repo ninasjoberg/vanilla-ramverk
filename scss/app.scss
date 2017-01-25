@@ -124,18 +124,19 @@ h1, h2, h3, h4, h5, h6 {
 /*****************************************/
 /*Erbjuder*/
 .erbjuder{
-	padding: 2rem;
+	padding: 2.5rem;
 }
 
 
 .icon-hover{
+	margin-bottom: 2rem;
 	transition: all .2s ease-in;
 	transform: scale(1);
 }
 	
 .erbjuder:hover .icon-hover{
 	transition: all .1s ease-out;
-	transform: scale(1.5);
+	transform: scale(1.3);
 }
 
 /*****************************************/
