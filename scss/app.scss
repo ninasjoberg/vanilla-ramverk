@@ -115,8 +115,9 @@ h1, h2, h3, h4, h5, h6 {
   	flex-direction: column;
   		@media screen and (min-width: 640px) {
 			font-size: 2rem;
-    }
+    	}
 }
+
 .card-margin{
 	padding-top: 0.2rem !important;
 }
@@ -126,7 +127,6 @@ h1, h2, h3, h4, h5, h6 {
 .erbjuder{
 	padding: 2.5rem;
 }
-
 
 .icon-hover{
 	margin-bottom: 2rem;
@@ -150,8 +150,6 @@ h1, h2, h3, h4, h5, h6 {
 	.column, .columns {
 		padding:0;
 	}
-
-
 }
 
 .about-us img {
@@ -170,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 8px 5px 5px 8px;
 	}
 }
+
 .hover-box {
 	position: absolute;
 	top: 0rem;
@@ -210,7 +209,6 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: $secondary-color;
 }
 
-
 .background-border{
 	border: 1px solid black;
 }
@@ -249,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-info{
 	font-family: $header-font-family;
 	font-size: 1.2rem;
-	padding: 1rem 0;
+	padding: 1rem 0;	
 }
 
 footer .fa{
