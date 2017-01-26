@@ -156,7 +156,8 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
 }
 
 .card-margin{
-	padding-top: 0.2rem !important;
+	padding-top: 0.1rem !important;
+	padding-bottom: 2rem !important;
 }
 
 /*****************************************/
@@ -264,6 +265,7 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
 /* Kontakt */ 
 
 .background-skew{
+	@media screen and (min-width: 543px) {
     background-color: $tertiary-color;
     transform: skewY(155deg);
     position: absolute;
@@ -271,9 +273,8 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
     width: 100%;
     padding: 1rem;
     z-index: -1;
-  }
-
-
+	}	
+ }
   .underline{
   	text-decoration: underline;
   }
