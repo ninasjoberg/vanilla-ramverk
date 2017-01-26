@@ -104,7 +104,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Bebas Neue', Georgia; /* Ändrar, CT */
+$header-font-family: $heading-font, Georgia; /* Ändrar, CT */
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
