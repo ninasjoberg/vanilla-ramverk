@@ -71,6 +71,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.vit-kant{
+	margin-right: 0 !important;
+	padding-right: 1rem !important;
+	background-color: white !important;
+	    max-width: 75rem;
+}
 /*****************************************/
 /* Index */ 
 
@@ -78,15 +84,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   text-align: left;
   max-width:100% !important;
-}
-.anim{
-  	position: absolute;
-	width:50%;
- 	margin: 3.5rem 0 0 0.6rem;
-	 	@media screen and (min-width: 640px) {
-	      	margin: 3rem 0 0 1.8rem;
-	      	width: 40%;
-		}
 }
 
 .background-img-sm{
@@ -108,22 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     	}
   }
 
-.slogan p{
-	font-family: $body-font-family;
-	font-size: 1.5rem;
-	height: 250px;
-	display: flex;
-  	justify-content: center;
-  	flex-direction: column;
-	  	@media screen and (min-width: 640px) {
-			font-size: 2rem;
-		}
-}
-.card-margin{
-	padding-top: 0.2rem !important;
-}
-
-/* FALLBACK SVG, webbläsare som stödjer multipla bakgrundsbilder stödjer även svg. 
+ /* FALLBACK SVG, webbläsare som stödjer multipla bakgrundsbilder stödjer även svg. 
 Om webbläsaren inte stödjer multipla bakgrunder kommer den 
 att läsa in den första bakgrundsbilden, fallback-versionen.
 */
@@ -149,6 +131,32 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
 		height:370px;
 		margin: 4rem 0 0 1.5rem;
     }
+}
+
+.slogan p{
+	font-family: $body-font-family;
+	font-size: 1.5rem;
+	height: 250px;
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+	  	@media screen and (min-width: 640px) {
+			font-size: 2rem;
+		}
+}
+.background-skew-index{
+			  	@media screen and (min-width: 543px) {
+					background-color: $tertiary-color;
+		transform: skewY(170deg);
+		position: absolute;
+		height: 280px;
+		width: 100%;
+		z-index: -2000;
+		}
+}
+
+.card-margin{
+	padding-top: 0.2rem !important;
 }
 
 /*****************************************/
@@ -257,13 +265,14 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
 
 .background-skew{
     background-color: $tertiary-color;
-    transform: skewY(155deg);
+    transform: skewY(150deg);
     position: absolute;
     height: 100%;
     width: 100%;
     padding: 1rem;
     z-index: -1;
   }
+
 
   .underline{
   	text-decoration: underline;
