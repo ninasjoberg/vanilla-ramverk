@@ -42,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
+.menu.vertical>li>.menuitem {
+	justify-content: center;
+}
+
 @media screen and (max-width: 640px) {
 	.toggle-style {
 		background-color: $secondary-color !important;
