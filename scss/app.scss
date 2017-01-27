@@ -125,6 +125,10 @@ h1, h2, h3, h4, h5, h6 {
 Om webbläsaren inte stödjer multipla bakgrunder kommer den 
 att läsa in den första bakgrundsbilden, fallback-versionen.
 */
+
+/*Edit: detta gör dock att animationen inte fungerar i vissa webbläsare, pga dunno? 
+Så fallback blev en failback i detta fall..*/
+
 .anim{
 	background: url("../images/logo/fallback@0.3x.png");
 	background-image: url("../images/logo/anim_logo1.svg"), none;
