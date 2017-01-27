@@ -5,8 +5,19 @@
 @import 'motion-ui';
 
 // Fonts
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import "../fonts/font-awesome/scss/font-awesome.scss"; 
+
+@font-face {
+   font-family: 'bebas_neue';
+   src: url('../fonts/bebas_neue/bebasneue_regular-webfont.woff2') format('woff2'),
+        url('../fonts/bebas_neue/bebasneue_regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+$heading-font: "bebas_neue", Georgia;
 
 $primary-color: #827191;
 $secondary-color: #BEE3DB;
@@ -14,12 +25,13 @@ $tertiary-color: #e3bec6;
 
 h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0.2rem;
+	font-family: $heading-font !important;
 }
 
 /*****************************************/
 /* MENY */
 .menu, .hamburger {
-	font-family: $header-font-family;
+	font-family: $heading-font;
 	font-size: 2.3rem; 
 	cursor: pointer;
 	letter-spacing: 0.05rem;
@@ -40,6 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
 	width: 100%;
+}
+
+.menu.vertical>li>.menuitem {
+	justify-content: center;
 }
 
 @media screen and (max-width: 640px) {
@@ -109,6 +125,10 @@ h1, h2, h3, h4, h5, h6 {
 Om webbläsaren inte stödjer multipla bakgrunder kommer den 
 att läsa in den första bakgrundsbilden, fallback-versionen.
 */
+
+/*Edit: detta gör dock att animationen inte fungerar i vissa webbläsare, pga dunno? 
+Så fallback blev en failback i detta fall..*/
+
 .anim{
 	background: url("../images/logo/fallback@0.3x.png");
 	background-image: url("../images/logo/anim_logo1.svg"), none;
@@ -127,7 +147,7 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
 }
 @media screen and (min-width: 1150px) {
 		.anim{ 
-		width:100%;
+		width:450px;
 		height:370px;
 		margin: 4rem 0 0 1.5rem;
     }
@@ -275,6 +295,7 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
  }
   .underline{
   	text-decoration: underline;
+  	color: $black;
   }
 /*  .area-height{
   	height:200px;
@@ -291,7 +312,7 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
 }
 
 .contact-info{
-	font-family: $header-font-family;
+	font-family: $heading-font;
 	font-size: 1.2rem;
 	padding: 1rem 0;
 	@media screen and (max-width: 640px){
@@ -301,7 +322,7 @@ att läsa in den första bakgrundsbilden, fallback-versionen.
 
 .follow-us	p {
 		margin: 0;
-		font-family: $header-font-family;
+		font-family: $heading-font;
 		font-size: 1.2rem;
 		letter-spacing: 0.05rem;
 	}
