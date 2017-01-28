@@ -180,6 +180,13 @@ Så fallback blev en failback i detta fall..*/
 	padding-bottom: 2rem !important;
 }
 
+.divider-color{
+	padding: 0 !important;
+	height: 40px !important;
+	width:100%;
+	background-color: white !important;
+}
+
 /*****************************************/
 /*Erbjuder*/
 .erbjuder{
@@ -304,7 +311,9 @@ font-size: 1rem;
   .area-height{
   	height:70px;
   }
-
+.gatubild{
+	margin-bottom: 1rem !important;
+}
 /*****************************************/
 /*Footer*/ 
 
