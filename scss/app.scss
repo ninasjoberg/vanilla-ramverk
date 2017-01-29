@@ -86,11 +86,6 @@ h1, h2, h3, h4, h5, h6{
 	}
 }
 
-.vit-kant{
-	margin-right: 0 !important;
-	padding-right: 2rem !important;
-}
-
 /*****************************************/
 /* Index */ 
 
@@ -288,7 +283,7 @@ Så fallback blev en failback i detta fall..*/
 /*****************************************/
 /* Kontakt */ 
 
-.background-skew{
+/*.background-skew{
 	@media screen and (min-width: 543px){
 	    background-color: $tertiary-color;
 	    transform: skewY(155deg);
@@ -298,6 +293,24 @@ Så fallback blev en failback i detta fall..*/
 	    padding: 1rem;
 	    z-index: -1;
 	}	
+}*/
+.contact-left{
+border: 1px solid black;
+	padding:2rem !important;
+}
+.contact-right{
+	background-color: $secondary-color;
+	padding:2rem !important;
+}
+
+@media screen and (max-width: 640px){
+	
+	.contact-left{
+		border: hidden !important;		
+	}
+	.contact-right {
+		background-color: transparent !important;
+	}
 }
 
 .underline{
@@ -317,6 +330,9 @@ Så fallback blev en failback i detta fall..*/
 	margin-bottom: 1rem !important;
 }
 
+.area-height{
+	height: 200px;
+}
 /*****************************************/
 /*Footer*/ 
 
