@@ -118,16 +118,13 @@ h1, h2, h3, h4, h5, h6{
 Om webbläsaren inte stödjer multipla bakgrunder kommer den 
 att läsa in den första bakgrundsbilden, fallback-versionen. */
 
-/*Edit: detta gör dock att animationen inte fungerar i vissa webbläsare, pga dunno? 
-Så fallback blev en failback i detta fall..*/
-
 .anim{
-	background: url("../images/logo/fallback@0.3x.png");
-	background-image: url("../images/logo/anim_logo1.svg"), none;
+	background-image: url("../images/logo/fallback@0.3x.png");
+	background: url("../images/logo/anim_logo1.svg" ), none;
   	position: absolute;
 	width: 220px;
 	height: 275px;
- 	margin: 3.5rem 0 0 0.2rem;
+ 	margin: 3.5rem 0 0 0.5rem;
  	background-repeat: no-repeat;
 }
 
@@ -135,7 +132,7 @@ Så fallback blev en failback i detta fall..*/
 	.anim{
 		width: 330px;
 		height: 275px;
- 		margin: 3.5rem 0 0 0.4rem;
+ 		margin: 3.5rem 0 0 1rem;
     }
 }
 
@@ -143,9 +140,24 @@ Så fallback blev en failback i detta fall..*/
 	.anim{ 
 		width: 450px;
 		height: 370px;
-		margin: 4rem 0 0 1.5rem;
+		margin: 4rem 0 0 3.4rem;
     }
 }
+
+/*.anim2{
+	width:50%;
+	position:absolute;
+	padding-top: 3rem;
+	padding-left: 0.7rem;
+}
+
+.anim2{
+@media screen and (min-width: 992px){
+		width:45%;
+		top: 2.5rem;
+		left: 1.5rem;
+	}
+}*/
 
 .slogan p{
 	font-family: $body-font-family;
