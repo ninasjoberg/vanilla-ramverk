@@ -1,9 +1,15 @@
 # Vanilla webdesign - Foundation
 
-### Uppgift: 
-Återskapa websidan för er fiktiva webbyrå men denna gång med valfritt css-ramverk.
+Nina Sjöberg, Camilla Tranberg och Cecilia Minami
+Kurs: HTML/Css
+Nackademin, jan 2017
 
-Vi har i denna uppgift använt oss av ramverket Foundation. 
+
+### Uppgift: 
+"Återskapa websidan för er fiktiva webbyrå men denna gång med valfritt css-ramverk."
+
+
+- Vi har i denna uppgift använt oss av ramverket Foundation. 
 
 
 
