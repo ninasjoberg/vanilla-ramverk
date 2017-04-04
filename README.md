@@ -1,7 +1,8 @@
 # Vanilla webdesign - Foundation
 
 Nina Sjöberg, Camilla Tranberg och Cecilia Minami
-Kurs: HTML/Css
+
+Kurs: HTML/Css,
 Nackademin, jan 2017
 
 
